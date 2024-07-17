@@ -5,7 +5,7 @@ async function fetchRandomJoke() {
     const loader = document.getElementById('loader');
     const jokeContainer = document.getElementById('jokeContainer');
 
-    // Show loader
+   
     loader.classList.remove('hidden');
     jokeContainer.innerText = '';
 
@@ -20,7 +20,7 @@ async function fetchRandomJoke() {
         console.error('Fetch error:', error);
         alert('Failed to retrieve a joke. Please try again.');
     } finally {
-        // Hide loader
+        
         loader.classList.add('hidden');
     }
 }
